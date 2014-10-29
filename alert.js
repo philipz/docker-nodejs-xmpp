@@ -36,8 +36,8 @@ function toPoint(message, callback) {
 		if (count_temp == 0 && count != 0) {
 			count = count_temp;
 		} else if (count != count_temp) {
-			callback.send('yourfriend@gmail.com', new Date().toLocaleTimeString() + ' Alert! ' + count_temp + '% ' + close);
 			count = count_temp;
+			callback.send('yourfriend@gmail.com', new Date().toLocaleTimeString() + ' Alert! ' + count_temp + '% ' + close);
 		}
 		//return [name , points]; 
 	   } catch (ex) {
